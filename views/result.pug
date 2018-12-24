@@ -1,0 +1,9 @@
+mixin result(song_name, owner, collaborators, id)
+    div(class="result bg-white shadow rounded border")
+        div(id="info")
+            h1 "#{song_name}"
+            h3 by #{owner}
+            if collaborators
+                h5 with the help of #{collaborators}
+        button(class="btn play" type="button")
+            img(id=id src="/images/play.png" alt="play button")

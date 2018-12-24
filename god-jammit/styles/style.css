@@ -1,0 +1,166 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    min-width: 500px;
+}
+
+#logo {
+    height: 2.5em;
+}
+
+@media screen
+  and (max-width: 775px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      #navbar {
+          text-align: center;
+      }
+
+      #login {
+          display: block;
+          margin: 0 auto;
+      }
+}
+
+@media screen
+  and (max-width: 775px)
+  and (min--moz-device-pixel-ratio: 1) {
+      #navbar {
+          text-align: center;
+      }
+
+      #login {
+          display: block;
+          margin: 0 auto;
+      }
+}
+
+#plus {
+    height: 1.25em;
+    padding-bottom: 4px;
+}
+
+#desc {
+    color: white;
+    background-image: url("/images/midi.jpg");
+    background-size: cover;
+    margin: 5% auto;
+    width: 75%;
+    padding: 5% 0;
+    border: solid 5px black;
+    border-radius: 10px;
+}
+
+#desc h1 {
+    font-size: 3em;
+    padding-bottom: 3%;
+}
+
+#text {
+    text-align: center;
+    margin: 3% 0;
+}
+
+#project {
+    margin-right: 1%;
+}
+
+*:active, *:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+#loginbox {
+    text-align: center;
+    margin: 5% auto;
+    width: 40%;
+}
+
+#user {
+    float: left;
+    padding: 3% !important;
+    width: 25%;
+    height: 65vh;
+}
+
+#user, #users {
+    overflow: auto;
+}
+
+#user h3 {
+    text-decoration: underline;
+}
+
+#user h3, #users {
+    text-align: center;
+}
+
+#inputs {
+    margin: 10% 0;
+}
+
+#midi_viz {
+    background-image: url("/images/midi.jpg");
+    background-size: cover;
+    float: right;
+    width: 75%;
+    height: 65vh;
+    border: solid;
+}
+
+#publish, #record {
+    float: right;
+    margin-top: 3vh;
+}
+
+#publish {
+    margin-left: 1%;
+}
+
+#ready {
+    margin-top: 3vh;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#show_result {
+    margin: 1% auto;
+    text-decoration: underline;
+}
+
+.result {
+    overflow: auto;
+    padding: 1% 3%;
+}
+
+.result div h1, .result div h3 {
+    display: inline;
+}
+
+.result div h3 {
+    margin-left: 1%;
+}
+
+.result div h6 {
+    margin-top: 1%;
+}
+
+.result div {
+    display: inline-block;
+    width: 90%;
+}
+
+.play {
+    width: 10%;
+    float: right;
+    background-color: transparent;
+}
+
+.play img {
+    height: 10vh;
+}

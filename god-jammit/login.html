@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+  <title>Log In</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyC9WMs-5RNYl_bqZKwn15IfGiSXDpJ4UmM",
+      authDomain: "god-jammit.firebaseapp.com",
+      databaseURL: "https://god-jammit.firebaseio.com",
+      projectId: "god-jammit",
+      storageBucket: "god-jammit.appspot.com",
+      messagingSenderId: "72377299659"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+  <script src="/scripts/login.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+
+        <div id="navbar" class="navbar navbar-expand-lg">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="/">
+                        <img id="logo" src="/images/icon.png" alt="logo" />
+                    </a>
+                    <span class="navbar-text">
+                        Collaborate on music from your own home
+                    </span>
+                </div>
+                <a id="login" class="btn btn-outline-link" role="button" href="/">Return to home</a>
+            </div>
+        </div>
+
+        <div id="loginbox" class="jumbotron shadow">
+            <h2>Log in</h2>
+            <h6>Using Google or Facebook</h6>
+            <div id="firebaseui-auth-container"></div>
+<!--
+        <form class="rounded">
+                <div id="inputs">
+                <div class="input-group input-group-md">
+                    <input class="form-control" type="text" name="username" placeholder="Username"/>
+                </div>
+                <div class="input-group input-group-md">
+                    <input class="form-control" type="password" name="password" id="hiddenpw" placeholder="Password"/>
+                </div>
+                </div>
+                <button class="btn btn-primary">Log In</button>
+        </form>
+-->
+    <!--
+	<input type="checkbox" onclick="myFunction()">Show Password <br/>
+	<input type="submit" value="Log in!">
+-->
+
+<!--
+	<script>
+		function myFunction() {
+			var x = document.getElementById("hiddenpw");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+	</script>
+-->
+    </div>
+
+<!--
+<p> ----- or -----</p>
+<h2>Log in with</h2>
+<img src="facebook.png" alt="Facebook">
+<img src="google-plus.png" alt="Google">
+<img src="soundcloud.png" alt="Soundcloud">
+-->
+
+<!--
+<p>Icon Credits</p>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Google plus">Google plus</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Facebook">Facebook</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
